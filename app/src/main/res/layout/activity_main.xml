@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<linearlayout android:background="@android:color/darker_gray"
-    android:gravity="center"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent" android:orientation="vertical"
-    tools:context=".MainActivity" xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-    <imagebutton android:background="@null" android:contentdescription="@null"
+    android:background="@drawable/radial_background"
+    tools:context=".MainActivity" >
+
+    <ImageButton
         android:id="@+id/btnSwitch"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:src="@drawable/btn_switch_on"/>
-</linearlayout>
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dip"
+        android:src="@drawable/btn_switch_on"
+        android:background="@null"
+        android:contentDescription="@null"
+        />
+</RelativeLayout>
